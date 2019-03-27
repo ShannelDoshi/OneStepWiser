@@ -36,6 +36,9 @@
 -ofcourse! I am just glad I could help you.{weight=25}
 -you are welcome. I hope you feel better.{weight=25}
 
++(bye|goodbye|byebye|have a good day|*bye|bye*|*goodbye|goodbye*)
+-bye! Have a nice day.
+
 
 //RiveSubs
 // Substitutions
