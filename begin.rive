@@ -1,0 +1,141 @@
+//RiveScript
+! version = 2.0
++ (hello|hi|hey|helloo|)
+- Hi, how may I help you today?
++(how are you|*how are you|how are you*)
+-I am good, thank you. How are you?
++i am*
+-okay, so how can i help you?
++ *
+- Can you elaborate a little more maybe?{weight=25}
+- I would love to know more about what you have to say{weight=25}
+- Hmmm, explain a little more...{weight=25}
+- I see, but how do you feel right now?{weight=25}
+//+ my name is * * 
+//- Hello <star2>, <star1>!
+//saving information
++ my name is *
+- Hello,<set name=<formal>> <get name>
+
++ what is my name
+* <get name> == undefined => You never told me your name.
+- You are <get name>!
+- You're <get name>!
+- <get name>, fam.
+
++ *help
+- Tell me more so I can help you better.
++ help*
+- tell me more so I can help you better
++ what is your name
+- my name is amar agarwal
+
++(thank you|*thank you|thank you*)
+-you are welcome, I hope this was helpful{weight=25}
+-sure, it is my pleasure! Let me know if you need to talk again{weight=25}
+-ofcourse! I am just glad I could help you.{weight=25}
+-you are welcome. I hope you feel better.{weight=25}
+
+
+//RiveSubs
+// Substitutions
+! sub &quot;    = "
+! sub &apos;    = '
+! sub &amp;     = &
+! sub &lt;      = <
+! sub &gt;      = >
+! sub +         = plus
+! sub -         = minus
+! sub /         = divided
+! sub *         = times
+! sub i'm       = i am
+! sub i'd       = i would
+! sub i've      = i have
+! sub i'll      = i will
+! sub don't     = do not
+! sub isn't     = is not
+! sub you'd     = you would
+! sub you're    = you are
+! sub you've    = you have
+! sub you'll    = you will
+! sub he'd      = he would
+! sub he's      = he is
+! sub he'll     = he will
+! sub she'd     = she would
+! sub she's     = she is
+! sub she'll    = she will
+! sub they'd    = they would
+! sub they're   = they are
+! sub they've   = they have
+! sub they'll   = they will
+! sub we'd      = we would
+! sub we're     = we are
+! sub we've     = we have
+! sub we'll     = we will
+! sub whats     = what is
+! sub what's    = what is
+! sub what're   = what are
+! sub what've   = what have
+! sub what'll   = what will
+! sub can't     = can not
+! sub whos      = who is
+! sub who's     = who is
+! sub who'd     = who would
+! sub who'll    = who will
+! sub don't     = do not
+! sub didn't    = did not
+! sub it's      = it is
+! sub could've  = could have
+! sub couldn't  = could not
+! sub should've = should have
+! sub shouldn't = should not
+! sub would've  = would have
+! sub wouldn't  = would not
+! sub when's    = when is
+! sub when're   = when are
+! sub when'd    = when did
+! sub y         = why
+! sub u         = you
+! sub ur        = your
+! sub r         = are
+! sub n         = and
+! sub im        = i am
+! sub i'm       = i am
+! sub wat       = what
+! sub wats      = what is
+! sub ohh       = oh
+! sub becuse    = because
+! sub becasue   = because
+! sub becuase   = because
+! sub practise  = practice
+! sub its a     = it is a
+! sub fav       = favorite
+! sub fave      = favorite
+! sub yesi      = yes i
+! sub yetit     = yet it
+! sub iam       = i am
+! sub welli     = well i
+! sub wellit    = well it
+! sub amfine    = am fine
+! sub aman      = am an
+! sub amon      = am on
+! sub amnot     = am not
+! sub realy     = really
+! sub iamusing  = i am using
+! sub amleaving = am leaving
+! sub yuo       = you
+! sub youre     = you are
+! sub didnt     = did not
+! sub ain't     = is not
+! sub aint      = is not
+! sub wanna     = want to
+! sub brb       = be right back
+// Person substitutions
+! person i am    = you are
+! person you are = I am
+! person i'm     = you're
+! person you're  = I'm
+! person my      = your
+! person your    = my
+! person you     = I
+! person i       = you

@@ -1,0 +1,110 @@
+body {
+  background-color: #fff;
+  color: black;
+}
+
+.vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+h1.vertical-container {
+  font-size: 100%;
+}
+
+h1{
+    color: black;
+font-family: futura-pt, sans-serif;
+font-weight: 10;
+font-style: normal;
+    font-size: 24px; 
+    font-variant: normal; 
+    margin-top: 0;
+    text-align: center;
+    background-color: #E7E7E7;
+    
+}
+
+.profile {
+     margin-top: 3px;
+   position: absolute;
+margin-left: 30%;
+    
+}
+
+.bell {
+    margin-top: 4px;
+   position: absolute;
+margin-left: 20%;
+}
+
+.back{
+   position: absolute;
+    
+}
+
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.amar {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: #E7E7E7;
+    margin-top: 15px;}
+
+.amarpic {
+    margin-top: 4px;
+}
+
+.dots {
+    float: right;
+    display:block;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.name{
+position: absolute;
+left: 50%;
+top: 20%;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 24px; 
+}
+
+.tag{
+position: absolute;
+left: 60%;
+top: 24%;
+color:gray;
+font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px; 
+}
+
+
+.time{
+position: absolute;
+left: 78%;
+top: 28%;
+color:gray;
+font-family: futura-pt, sans-serif;
+font-weight: 10;
+font-style: normal;
+font-size: 8px; 
+}
+
+
+
+

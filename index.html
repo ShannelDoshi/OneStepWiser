@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#008000" />
+    <title>RiveScript Chatbot Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="hello-world.css" media="all">
+    <link rel="manifest" href="manifest.json">
+     <link rel="stylesheet" href="https://use.typekit.net/hoo6fob.css">
+
+    <!-- BEGIN Rivescript head script -->
+    <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rivescript/1.19.0/rivescript.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- END Rivescript head script -->
+
+</head>
+
+<!-- Rivescript adds "onload" to body -->
+
+<body onload="main();">
+    <!-- End Rivescript code -->
+
+   <h1>CHAT 
+<img class="bell" alt="bell" src="icons/bell.png" width="20px">
+<img class="profile" alt="profile" src="icons/person-profile.png" width="25px">      
+</h1>
+
+      
+<div class="nav">
+    <img class="back" alt="back" src="icons/back.png" width="35px">
+      <img class="logo" alt="logo" src="icons/final.png" width="50px">
+</div>
+      
+      
+<div class="amar">
+   <img class="amarpic" alt="amarpic" src="icons/amar.png" width="150px"> 
+    <img class="dots" alt="dots" src="icons/dots.png" width="30px">
+     <div class="name">Amar Aggarwal</div>
+      <div class="tag">Therapist</div>
+    <div class="time">18th April 2018 16:00</div>
+</div>
+
+    <!-- BEGIN Rivescript embedded code -->
+  
+    <div class="wrapper">
+        <!-- where the divs are inserted, right about here. -->
+    </div>
+    <div id="container">
+        <input type="text" id="chatInput" placeholder="Enter a message">
+        <button type="button" id="guide">Guide</button>
+        <button type="button" id="submit">Enter</button>
+    </div>
+    <!-- END Rivescript embedded code -->
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAXK4Orxl2CghIQvKiUPtkhEngSgzteqE0",
+            authDomain: "hello-world-pwa-8669c.firebaseapp.com",
+            databaseURL: "https://hello-world-pwa-8669c.firebaseio.com",
+            projectId: "hello-world-pwa-8669c",
+            storageBucket: "hello-world-pwa-8669c.appspot.com",
+            messagingSenderId: "660239288739"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function() {
+                    console.log('Service Worker Registered');
+                });
+        }
+    </script>
+    <script>
+        const messaging = firebase.messaging();
+
+        messaging.requestPermission()
+            .then(function() {
+                console.log('Notification permission granted.');
+                return messaging.getToken();
+            })
+            .then(function(token) {
+                console.log(token);
+            })
+            .catch(function(err) {
+                console.log('Unable to get permission to notify.', err);
+            })
+    </script>
+</body>
+
+</html>
