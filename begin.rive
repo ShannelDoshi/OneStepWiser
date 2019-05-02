@@ -2,7 +2,7 @@
 ! version = 2.0
 + (hello|hi|hey|helloo|)
 - Hi, how may I help you today?
-+(how are you|*how are you|how are you*)
++(how are you|*how are you|how are you*|how are*)
 -I am good, thank you. How are you?
 +i am*
 -okay, tell me more about it.
