@@ -5,7 +5,7 @@
 +(how are you|*how are you|how are you*)
 -I am good, thank you. How are you?
 +i am*
--okay, so how can i help you?
+-okay, tell me more about it.
 + *
 - Can you elaborate a little more maybe?{weight=25}
 - I would love to know more about what you have to say{weight=25}
