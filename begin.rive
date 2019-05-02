@@ -27,7 +27,7 @@
 
 + *help
 - Tell me more so I can help you better.
-+ help*
++ (help*|*help*)
 - tell me more so I can help you better
 + what is your name
 - my name is amar agarwal
